@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-gray-900 antialiased;
+  }
+
+  ::selection {
+    @apply bg-brand-500 text-white;
+  }
+}
+
+@layer components {
+  .gradient-mesh {
+    background-image:
+      radial-gradient(at 40% 20%, rgba(79, 70, 229, 0.12) 0px, transparent 50%),
+      radial-gradient(at 80% 0%, rgba(129, 140, 248, 0.1) 0px, transparent 50%),
+      radial-gradient(at 0% 50%, rgba(79, 70, 229, 0.08) 0px, transparent 50%),
+      radial-gradient(at 80% 50%, rgba(165, 180, 252, 0.08) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, rgba(79, 70, 229, 0.06) 0px, transparent 50%);
+  }
+}
